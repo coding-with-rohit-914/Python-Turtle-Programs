@@ -1,0 +1,36 @@
+import turtle
+import colorsys
+s = turtle.Screen()
+turtle.title('Python Animation Code')
+s.setup(width=500, height=500)
+turtle.bgcolor('black')
+t1=turtle.Turtle()
+t2=turtle.Turtle()
+t3=turtle.Turtle()
+t4=turtle.Turtle()
+t1.pencolor('red')
+t2.pencolor('green')
+t3.pencolor('blue')
+t4.pencolor('yellow')
+turtle.tracer(35)
+c=0.8888
+t2.left(180)
+t3.left(270)
+t4.left(-270)
+
+for i in range (130):
+    p = colorsys.hsv_to_rgb(c, 1, 0.99)
+    t1.pencolor(p)
+    t2.pencolor(p)
+    t3.pencolor(p)
+    t4.pencolor(p)
+    c+=0.003
+    t1.circle(i)
+    t2.circle(i)
+    t3.circle(i)
+    t4.circle(i)
+    t1.hideturtle()
+    t2.hideturtle()
+    t3.hideturtle()
+    t4.hideturtle()
+turtle.done()

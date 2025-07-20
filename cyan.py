@@ -1,0 +1,16 @@
+import turtle
+t = turtle.Turtle()
+t.speed(0)
+t.pencolor("cyan")
+t.fillcolor("orange")
+for i in range(36):
+    t.begin_fill()
+    t.forward(i * 5)
+    t.left(90)
+    t.forward(i * 5)
+    t.left(90)
+    t.forward(i * 5)
+    t.left(90)
+    t.forward(i * 5)
+    t.end_fill()
+turtle.done()
